@@ -1,0 +1,326 @@
+/* базовая настройка дизайна */
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Karma", sans-serif
+}
+
+.w3-bar-block .w3-bar-item {
+    padding:20px
+}   
+
+h3,p{
+color: black ;
+}
+
+.w3-left{
+    width: 100px;
+    border-radius: 10%;
+    
+}
+
+p{
+    font-size: 25px;
+}
+
+
+/* стили для всех элементов */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(body.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.container {
+    margin: 1.5vh 20vw;
+    margin-top: 10vh;
+    text-align: center;
+    background: gainsboro;
+    
+    opacity: 0.9;
+    color: black;
+    padding: 10px 10vw;
+    border-radius: 20px;
+    min-height: 15vh;
+}
+
+/* определяет стиль для секции на странице. */
+section {
+    height: 50vh;
+    width: 100%;
+    margin-top: -50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* стиль для подвала */
+footer{
+    position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+
+
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+    
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+
+
+.w3-large{
+font-size: 20px;
+    color: black;
+}
+
+.w3-third{
+
+text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+    color:black;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#wrap{    
+    width: 200px;
+    height: 200px;
+    margin: 60px auto;
+}
+#result{    
+    height: 200px;
+}
+
+#img{
+    size: 20px;
+}
+
+/* .button{
+    width: 40%;
+    
+} */
+
+.logo{
+    text-align: center;
+    width: 200px;
+    border-radius: 5%;
+    border: 1px solid black;
+
+}
+
+.hidden {
+    display: none;
+  }
+
+  
+  .button-a {
+    display: inline-block;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 1px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+  } 
+ .button-a:hover { background: rgba(255,255,255,.2); }
+ .button-a:active { background: white; }
+
+ #results {
+  display: none;
+ }
+
+
+
+ /* 2 fun */
+ .imager {
+  display: inline-block;
+  margin-right: 20px;
+  width: 350px;
+  height: 250px;
+ border-radius: 5%;
+ 
+ }
+.imager:hover {
+   border: 3px solid brown; 
+}
+
+
+body{
+ text-align: center;
+
+}
+
+
+ .selected {
+  border: 2px solid green;
+ }
+ .hidden {
+  display: none;
+ }
+
+
+ /* 3 fun */
+ #options-container {
+  text-align: center;
+}
+
+select {
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+
+
+#image-container {
+  text-align: center;
+
+}
+
+img {
+  width: 500px;
+  
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 5%; 
+}
+
+option{
+  font-size:larger;
+}
+
+#img{
+  display: none;
+}
